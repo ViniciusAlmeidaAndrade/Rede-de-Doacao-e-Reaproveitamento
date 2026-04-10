@@ -24,11 +24,11 @@ O projeto irá demonstrar aplicação prática dos conceitos de Programação Or
 ## Modelagem
 <div align="center">
   <p><i>Modelagem de Classes</i></p>
-  <img src="modelagem_das_classes.drawio.png" width="440px" height= "400" />
+  <img src="docs/modelagem_das_classes.drawio.png" width="440px" height= "400" />
 </div>
 
 <div align="center">
   <p><i>Diagrama de Classes</i></p>
-  <img src="diagrama_de_classes.drawio.png" width="440px" height= "600"/>
+  <img src="docs/diagrama_de_classes.drawio.png" width="440px" height= "600"/>
 </div>
 
