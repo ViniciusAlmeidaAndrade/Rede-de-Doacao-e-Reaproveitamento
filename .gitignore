@@ -1,0 +1,10 @@
+# Java 
+*.class
+
+# VS Code
+.vscode/
+
+# Build dirs
+bin/
+out/
+target/
