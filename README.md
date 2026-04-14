@@ -32,3 +32,22 @@ O projeto irá demonstrar aplicação prática dos conceitos de Programação Or
   <img src="docs/diagrama_de_classes.drawio.png" width="440px" height= "600"/>
 </div>
 
+## Tecnologias Utilizadas
+Java (Versão 21.0.10).
+
+Versionamento: Git & GitHub.
+
+IDE: IntelliJ IDEA.
+
+Modelagem: Draw.io. 
+
+Estrutura do Projeto: 
+```
+src/
+├─ model/
+├─ service/
+├─ repository/
+├─ util/
+└─ Main/ 
+```
+
