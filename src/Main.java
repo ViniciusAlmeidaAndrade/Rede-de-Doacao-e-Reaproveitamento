@@ -21,13 +21,23 @@ public class Main {
             case 3:
                 cadastroService.cadastrarItem();
                 break;
+            case 4:
+                cadastroService.listarDoadores();
+                break;
+            case 5:
+                cadastroService.listarBeneficiarios();
+                break;
+            case 6:
+                cadastroService.listarItens();
+                break;
             case 0:
-                System.out.println("Saindo...");
+                System.out.println("Encerrando o sistema. Até logo!");
                 break;
             default:
                 System.out.println("Opção inválida. Tente novamente.");
         }
 
-    scanner.close();
+
+        scanner.close();
     }
 }
