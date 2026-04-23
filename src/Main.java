@@ -15,12 +15,12 @@ public class Main {
             case 1:
                 cadastroService.cadastrarDoador();
                 break;
-//                case 2:
-//                    cadastroService.cadastrarBeneficiario();
-//                    break;
-//                case 3:
-//                    cadastroService.cadastrarItem();
-//                    break;
+                case 2:
+                    cadastroService.cadastrarBeneficiario();
+                    break;
+                case 3:
+                    cadastroService.cadastrarItem();
+                    break;
             case 0:
                 System.out.println("Saindo...");
                 break;
