@@ -19,4 +19,9 @@ public class Doador extends Usuario {
     public void setTipoDoador(String TipoDoador){
         this.tipoDoador = TipoDoador;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | Tipo: " + tipoDoador;
+    }
 }

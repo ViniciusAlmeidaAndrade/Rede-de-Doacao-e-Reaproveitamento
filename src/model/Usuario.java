@@ -1,6 +1,7 @@
 package model;
 
 public class Usuario {
+    private int id;
     private String nome;
     private String telefone;
     private String endereco;
@@ -13,6 +14,7 @@ public class Usuario {
                    String email,
                    String senha) {
 
+        this.id = id++;
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
@@ -53,5 +55,10 @@ public class Usuario {
     }
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    @Override
+    public String toString() {
+        return "[ID: " + id + "] " + nome + " | Tel: " + telefone + " | Email: " + email + " | Endereço: " + endereco;
     }
 }
