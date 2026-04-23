@@ -1,27 +1,29 @@
 package model;
 
 public class ItemDoacao {
+    private int id;
     private String nome;
     private String categoria;
     private String descricao;
-    private int qtd;
+    private int quantidade;
     private String conservacao;
-    private String data_cadastro;
+    private String dataCadastro;
     private String status;
 
     public ItemDoacao(String nome,
                       String categoria,
                       String descricao,
-                      int qtd,
+                      int quantidade,
                       String conservacao,
-                      String data_cadastro,
+                      String dataCadastro,
                       String status){
+        this.id = id++;
         this.nome = nome;
         this.categoria = categoria;
         this.descricao = descricao;
-        this.qtd = qtd;
+        this.quantidade = quantidade;
         this.conservacao = conservacao;
-        this.data_cadastro = data_cadastro;
+        this.dataCadastro = dataCadastro;
         this.status = status;
     }
 
@@ -47,10 +49,10 @@ public class ItemDoacao {
     }
 
     public int getQtd(){
-        return qtd;
+        return quantidade;
     }
-    public void setQtd(int qtd){
-        this.qtd = qtd;
+    public void setQtd(int quantidade){
+        this.quantidade = quantidade;
     }
 
     public String getConservacao(){
@@ -61,10 +63,7 @@ public class ItemDoacao {
     }
 
     public String getDataCadastro(){
-        return data_cadastro;
-    }
-    public void setDataCadastro(String data_cadastro){
-        this.data_cadastro = data_cadastro;
+        return dataCadastro;
     }
 
     public String getStatus() {
@@ -72,5 +71,15 @@ public class ItemDoacao {
     }
     public void setStatus(String status){
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "[ID: " + id + "] " + nome +
+                " | Categoria: " + categoria +
+                " | Quantidade: " + quantidade +
+                " | Conservação: " + conservacao +
+                " | Status: " + status +
+                " | Cadastrado em: " + dataCadastro;
     }
 }
