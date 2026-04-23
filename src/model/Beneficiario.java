@@ -1,25 +1,28 @@
 package model;
 
 public class Beneficiario extends Usuario {
-    private String TipoBeneficiario;
+    private String tipoBeneficiario;
     private String prioridade;
 
     public Beneficiario (String nome,
-                   String telefone,
-                   String endereco,
-                   String email,
-                   String senha) {
+                         String telefone,
+                         String endereco,
+                         String tipoBeneficiario,
+                         String prioridade,
+                         String email,
+                         String senha) {
         super(nome, telefone, endereco, email, senha);
-        this.TipoBeneficiario = TipoBeneficiario;
+        this.tipoBeneficiario = tipoBeneficiario;
         this.prioridade = prioridade;
     }
 
     public String getTipoBeneficiario(){
-        return TipoBeneficiario;
+        return tipoBeneficiario;
     }
     public void setTipoBeneficiario(String TipoBeneficiario){
-        this.TipoBeneficiario = TipoBeneficiario;
+        this.tipoBeneficiario = tipoBeneficiario;
     }
+
     public String getPrioridade(){
         return prioridade;
     }
