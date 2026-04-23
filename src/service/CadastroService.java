@@ -45,7 +45,10 @@ public class CadastroService {
         String endereco = scanner.nextLine();
 
         System.out.print("Tipo de Beneficiario[Escola, ONG, Igreja, etc...]: ");
-        String tipo = scanner.nextLine();
+        String tipoBeneficiario = scanner.nextLine();
+
+        System.out.print("Prioridade: ");
+        String prioridade = scanner.nextLine();
 
         System.out.print("Email: ");
         String email = scanner.nextLine();
@@ -53,9 +56,8 @@ public class CadastroService {
         System.out.print("Senha: ");
         String senha = scanner.nextLine();
 
-        Beneficiario beneficiario = new Beneficiario(nome, telefone, endereco, tipo, email, senha);
+        Beneficiario beneficiario = new Beneficiario(nome, telefone, endereco, tipoBeneficiario, prioridade, email, senha);
         System.out.println("Beneficiario cadastrado com sucesso!");
-
     }
 
     public void cadastrarItem(){
