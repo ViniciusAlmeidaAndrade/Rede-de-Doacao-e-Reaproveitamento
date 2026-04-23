@@ -1,6 +1,8 @@
 package model;
 
 public class ItemDoacao {
+    private static int contadorId = 1;
+
     private int id;
     private String nome;
     private String categoria;
@@ -17,7 +19,7 @@ public class ItemDoacao {
                       String conservacao,
                       String dataCadastro,
                       String status){
-        this.id = id++;
+        this.id = contadorId++;
         this.nome = nome;
         this.categoria = categoria;
         this.descricao = descricao;
