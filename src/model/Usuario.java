@@ -23,10 +23,6 @@ public class Usuario {
     public String getNome() {
         return nome;
     }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -34,10 +30,6 @@ public class Usuario {
     public String getTelefone() {
         return telefone;
     }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
@@ -45,10 +37,6 @@ public class Usuario {
     public String getEndereco() {
         return endereco;
     }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
@@ -56,10 +44,6 @@ public class Usuario {
     public String getEmail() {
         return email;
     }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     public void setEmail(String email) {
         this.email = email;
     }
