@@ -20,6 +20,20 @@ O projeto irá demonstrar aplicação prática dos conceitos de Programação Or
 - ODS 12 - Consumo e Produção Responsáveis.
 ---
 
+## Como Executar
+
+**Pré-requisitos:** Java 21 instalado.
+
+**Compilar:**
+```bash
+javac -d bin src/model/*.java src/service/*.java src/util/*.java src/Main.java
+```
+
+**Executar:**
+```bash
+java -cp bin Main
+```
+---
 
 ## Modelagem
 <div align="center">
