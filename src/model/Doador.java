@@ -1,21 +1,22 @@
 package model;
 
 public class Doador extends Usuario {
-    private String tipo;
+    private String tipoDoador;
 
     public Doador (String nome,
                          String telefone,
                          String endereco,
+                         String tipoDoador,
                          String email,
                          String senha) {
         super(nome, telefone, endereco, email, senha);
-        this.tipo = tipo;
+        this.tipoDoador = tipoDoador;
     }
 
-    public String getTipo(){
-        return tipo;
+    public String getTipoDoador(){
+        return tipoDoador;
     }
-    public void setTipo(String tipo){
-        this.tipo = tipo;
+    public void setTipoDoador(String TipoDoador){
+        this.tipoDoador = TipoDoador;
     }
 }
