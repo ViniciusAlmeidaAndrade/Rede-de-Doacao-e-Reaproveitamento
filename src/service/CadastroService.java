@@ -1,5 +1,7 @@
 package service;
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 import model.Beneficiario;
 import model.Doador;
@@ -7,6 +9,10 @@ import model.ItemDoacao;
 
 public class CadastroService {
     private Scanner scanner = new Scanner(System.in);
+
+    private List<Doador> doadores = new ArrayList<>();
+    private List<Beneficiario> beneficiarios = new ArrayList<>();
+    private List<ItemDoacao> itens = new ArrayList<>();
 
     public void cadastrarDoador(){
         System.out.println("\nRealizando Cadastro do Doador\n");
@@ -85,6 +91,38 @@ public class CadastroService {
 
         ItemDoacao itemDoacao = new ItemDoacao(nome, categoria, descricao, qtd, conservacao, data_cadastro, status);
         System.out.println("Item cadastrado com sucesso!");
+    }
 
+    public void listarDoadores() {
+        System.out.println("\n===== Lista de Doadores =====");
+        if (doadores.isEmpty()) {
+            System.out.println("Nenhum doador cadastrado.");
+            return;
+        }
+        for (Doador d : doadores) {
+            System.out.println(d);
+        }
+    }
+
+    public void listarBeneficiarios() {
+        System.out.println("\n===== Lista de Beneficiários =====");
+        if (beneficiarios.isEmpty()) {
+            System.out.println("Nenhum beneficiário cadastrado.");
+            return;
+        }
+        for (Beneficiario b : beneficiarios) {
+            System.out.println(b);
+        }
+    }
+
+    public void listarItens() {
+        System.out.println("\n===== Lista de Itens Disponíveis =====");
+        if (itens.isEmpty()) {
+            System.out.println("Nenhum item cadastrado.");
+            return;
+        }
+        for (ItemDoacao i : itens) {
+            System.out.println(i);
+        }
     }
 }
