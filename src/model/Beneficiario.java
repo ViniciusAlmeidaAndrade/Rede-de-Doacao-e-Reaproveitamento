@@ -19,7 +19,7 @@ public class Beneficiario extends Usuario {
     public String getTipoBeneficiario(){
         return tipoBeneficiario;
     }
-    public void setTipoBeneficiario(String TipoBeneficiario){
+    public void setTipoBeneficiario(String tipoBeneficiario){
         this.tipoBeneficiario = tipoBeneficiario;
     }
 
@@ -29,4 +29,10 @@ public class Beneficiario extends Usuario {
     public void setPrioridade(String prioridade){
         this.prioridade = prioridade;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | Tipo: " + tipoBeneficiario + " | Prioridade: " + prioridade;
+    }
+
 }
