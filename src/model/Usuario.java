@@ -1,6 +1,7 @@
 package model;
 
 public class Usuario {
+    private static int contadorId = 1;
     private int id;
     private String nome;
     private String telefone;
@@ -14,7 +15,7 @@ public class Usuario {
                    String email,
                    String senha) {
 
-        this.id = id++;
+        this.id = contadorId++;
         this.nome = nome;
         this.telefone = telefone;
         this.endereco = endereco;
