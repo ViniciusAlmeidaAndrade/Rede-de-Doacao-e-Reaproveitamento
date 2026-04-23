@@ -1,12 +1,17 @@
 package model;
 
 public class Beneficiario extends Usuario {
+<<<<<<< Updated upstream
     private String TipoBeneficiario;
+=======
+    private String tipoBeneficiario;
+>>>>>>> Stashed changes
     private String prioridade;
 
     public Beneficiario (String nome,
                    String telefone,
                    String endereco,
+<<<<<<< Updated upstream
                    String email,
                    String senha) {
         super(nome, telefone, endereco, email, senha);
