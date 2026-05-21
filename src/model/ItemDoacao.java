@@ -18,7 +18,7 @@ public class ItemDoacao {
                       int quantidade,
                       String conservacao,
                       String dataCadastro,
-                      String status){
+                      String status) {
         this.id = contadorId++;
         this.nome = nome;
         this.categoria = categoria;
@@ -27,6 +27,10 @@ public class ItemDoacao {
         this.conservacao = conservacao;
         this.dataCadastro = dataCadastro;
         this.status = status;
+    }
+
+    public int getId(){
+        return id;
     }
 
     public String getNome(){
@@ -50,10 +54,10 @@ public class ItemDoacao {
         this.descricao = descricao;
     }
 
-    public int getQtd(){
+    public int getQuantidade(){
         return quantidade;
     }
-    public void setQtd(int quantidade){
+    public void setQuantidade(int quantidade){
         this.quantidade = quantidade;
     }
 
