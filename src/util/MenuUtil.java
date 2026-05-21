@@ -12,7 +12,12 @@ public class MenuUtil{
         System.out.println("  [3] Cadastrar Item para Doação");
         System.out.println("  [4] Listar Doadores");
         System.out.println("  [5] Listar Beneficiários");
-        System.out.println("  [6] Listar Itens Disponíveis");
+        System.out.println("  [6] Listar Itens");
+        System.out.println("  [7] Filtrar Itens");
+        System.out.println("  [8] Criar Solicitação");
+        System.out.println("  [9] Listar Solicitações");
+        System.out.println("  [10] Filtrar Solicitações por Status");
+        System.out.println("  [11] Atualizar Status da Solicitação");
         System.out.println("  [0] Sair");
         System.out.println("========================================");
     }
