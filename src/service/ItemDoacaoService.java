@@ -33,8 +33,8 @@ public class ItemDoacaoService {
         int quantidade = leitor.lerInteiro("Quantidade: ");
         validacoes.validarQuantidade(quantidade, "quantidade");
 
-        String conservacao = validacoes.normalizarOpcao(
-                leitor.lerTextoObrigatorio("Estado de conservacao [Novo/Bom/Regular]: "),
+        String conservacao = validacoes.normalizarOpcao(leitor.lerTextoObrigatorio(
+                "Estado de conservacao [Novo/Bom/Regular]: "),
                 "estado de conservacao",
                 new String[]{"Novo", "Bom", "Regular"}
         );
