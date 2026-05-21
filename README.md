@@ -85,7 +85,7 @@ Nesta etapa foram implementadas as principais regras de negócio do sistema:
 ## Modelagem
 <div align="center">
   <p><i>Modelagem de Classes</i></p>
-  <img src="docs/modelagem_das_classes-Página-2.drawio.png" width="440px" height= "400" />
+  <img src="docs/Modelagem_de_classes.drawio.png" width="440px" height= "400" />
 </div>
 
 <div align="center">
