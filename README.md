@@ -26,13 +26,60 @@ O projeto irá demonstrar aplicação prática dos conceitos de Programação Or
 
 **Compilar:**
 ```bash
-javac -d bin src/model/*.java src/service/*.java src/util/*.java src/Main.java
+javac -d bin src/model/*.java src/repository/*.java src/middleware/*.java src/exception/*.java src/service/*.java src/util/*.java src/Main.java
 ```
 
 **Executar:**
 ```bash
 java -cp bin Main
 ```
+---
+
+## Funcionalidades Implementadas
+
+- cadastro de doadores;
+- cadastro de beneficiários;
+- cadastro de itens para doação;
+- listagem de doadores, beneficiários e itens;
+- filtro de itens por categoria e status;
+- criação de solicitações;
+- listagem e filtro de solicitações por status;
+- atualização de status da solicitação;
+- controle de estoque e status do item.
+
+---
+
+## 2º Checkpoint - Regras de Negócio
+
+Nesta etapa foram implementadas as principais regras de negócio do sistema:
+
+- **solicitação de item**
+  - beneficiário seleciona um item disponível;
+  - informa quantidade, justificativa e data da solicitação.
+
+- **validações**
+  - campos obrigatórios;
+  - quantidade maior que zero;
+  - item existente e disponível;
+  - quantidade solicitada compatível com o estoque;
+  - opções válidas para tipo de doador, tipo de beneficiário, prioridade, categoria, conservação e status.
+
+- **mudança de status**
+  - `Pendente -> Aprovada`;
+  - `Pendente -> Recusada`;
+  - `Pendente -> Cancelada`;
+  - `Aprovada -> Concluida`.
+
+- **listagens e filtros**
+  - itens disponíveis;
+  - itens por categoria e status;
+  - solicitações por status.
+
+- **tratamento de erros de entrada**
+  - leitura segura de números inteiros;
+  - mensagens de erro para entradas inválidas;
+  - exceção própria para regras de negócio.
+
 ---
 
 ## Modelagem
@@ -59,9 +106,11 @@ Estrutura do Projeto:
 ```
 src/
 ├─ model/
+├─ middleware/
+├─ exception/
 ├─ service/
 ├─ repository/
 ├─ util/
-└─ Main/ 
+└─ Main.java
 ```
 
