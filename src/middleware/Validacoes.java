@@ -33,9 +33,7 @@ public class Validacoes {
         }
 
         if (quantidadeSolicitada > item.getQuantidade()) {
-            throw new RegraDeNegocioException(
-                    "Quantidade solicitada maior que o estoque disponivel do item."
-            );
+            throw new RegraDeNegocioException("Quantidade solicitada maior que o estoque disponivel do item.");
         }
     }
 
